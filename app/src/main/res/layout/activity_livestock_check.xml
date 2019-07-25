@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <com.qhsoft.killrecord.view.FreeToolbar
+        android:id="@+id/mFreeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutId="@layout/toolbar_common">
+
+    </com.qhsoft.killrecord.view.FreeToolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:text="基本信息"
+                android:textColor="@color/text_black_normal"
+                android:textSize="@dimen/text_size_normal" />
+
+
+                <TextView
+                    android:id="@+id/tv_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="10px"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginRight="20px"
+                    android:paddingTop="20px"
+                    android:padding="10px"
+                    android:lineSpacingExtra="15px"
+                    android:background="@drawable/ll_bg"
+                    android:text=""
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_size_small" />
+            <TextView
+                android:id="@+id/tv_daizai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:text="转入信息"
+                android:textColor="@color/text_black_normal"
+                android:textSize="@dimen/text_size_normal" />
+
+
+            <TextView
+                android:id="@+id/tv_info_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="20px"
+                android:padding="10px"
+                android:paddingTop="20px"
+                android:background="@drawable/ll_bg"
+                android:lineSpacingExtra="15px"
+                android:text=""
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_size_small" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:text="进场信息"
+                android:textColor="@color/text_black_normal"
+                android:textSize="@dimen/text_size_normal" />
+
+
+            <TextView
+                android:id="@+id/tv_info_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="20px"
+                android:padding="10px"
+                android:paddingTop="20px"
+                android:background="@drawable/ll_bg"
+                android:lineSpacingExtra="15px"
+                android:text=""
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:text="待宰检验记录"
+                android:textColor="@color/text_black_normal"
+                android:textSize="@dimen/text_size_normal" />
+            <LinearLayout
+                android:id="@+id/ll_checklist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/ll_bg"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:padding="10px"
+                >
+
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:text="屠宰记录"
+                android:textColor="@color/text_black_normal"
+                android:textSize="@dimen/text_size_normal" />
+            <LinearLayout
+                android:id="@+id/ll_kill_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/ll_bg"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:padding="10px"
+                android:gravity="center_horizontal"
+                >
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/text_black_normal"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:text="出场记录"
+                />
+            <LinearLayout
+                android:id="@+id/ll_outrecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/ll_bg"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:padding="10px"
+                android:gravity="center_horizontal"
+                >
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/text_black_normal"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:text="无害化处理记录"
+                />
+            <LinearLayout
+                android:id="@+id/ll_harmless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/ll_bg"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:padding="10px"
+                android:gravity="center_horizontal"
+                >
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

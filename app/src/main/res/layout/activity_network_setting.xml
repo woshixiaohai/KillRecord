@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    android:orientation="vertical">
+
+    <com.qhsoft.killrecord.view.FreeToolbar
+        android:id="@+id/mFreeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </com.qhsoft.killrecord.view.FreeToolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/ling_bg"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75px"
+        android:layout_marginRight="75px"
+        android:layout_marginTop="114px"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="域名："
+            android:textColor="@color/text_black_deep"
+            android:textSize="30px" />
+
+
+        <EditText
+            android:id="@+id/tv_domain"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/ll_network_setting_bg"
+
+            android:inputType="" android:paddingLeft="10px"
+            android:singleLine="true"
+            android:textColor="@color/text_black_normal"
+            android:textSize="30px" />
+
+        <TextView
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="ip："
+            android:textColor="@color/text_black_deep"
+            android:textSize="30px" />
+
+
+        <EditText
+            android:id="@+id/tv_ip"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/ll_network_setting_bg"
+            android:digits="0123456789."
+            android:inputType="" android:paddingLeft="10px"
+            android:singleLine="true"
+            android:textColor="@color/text_black_normal"
+            android:textSize="30px" />
+
+
+        <TextView
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:gravity="left"
+            android:text="端口："
+            android:textColor="@color/text_black_deep"
+            android:textSize="30px" />
+
+        <EditText
+            android:id="@+id/tv_port"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/ll_network_setting_bg"
+            android:inputType="number"
+            android:paddingLeft="10px"
+            android:singleLine="true"
+            android:textColor="@color/text_black_normal"
+            android:textSize="30px" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/tv_save"
+        android:layout_width="600px"
+        android:layout_height="80px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100px"
+        android:background="@drawable/ll_save_bg"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_normal" />
+
+</LinearLayout>

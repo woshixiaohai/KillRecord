@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/ll_bg"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingBottom="10px"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_title_1"
+                android:layout_width="160px"
+                android:layout_height="30px"
+                android:layout_centerVertical="true"
+
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10px"
+                    android:text="产品名称:"
+                    android:textColor="@color/text_black_normal"
+                    android:textSize="@dimen/text_size_small"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_title_1"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/tip_color"
+
+                    />
+
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/tv_productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_toRightOf="@id/rl_title_1"
+                android:textColor="@color/text_black_normal"
+                android:textSize="@dimen/text_size_small"
+                android:inputType="" android:text="猪酮体"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                >
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="35px"
+                    android:layout_height="35px"
+                    android:contentDescription="TODO" android:src="@drawable/ic_close"
+                    android:layout_margin="5px"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/ling_bg"
+            ></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="160px"
+                android:layout_height="30px">
+
+                <TextView
+                    android:id="@+id/tv_title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10px"
+                    android:text="产品类型:"
+                    android:textColor="@color/text_black_normal"
+                    android:textSize="@dimen/text_size_small"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_title_2"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/tip_color"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_productType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="20px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_normal"
+                android:text="头"
+
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:layout_marginTop="5px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="160px"
+                android:layout_height="30px">
+
+                <TextView
+                    android:id="@+id/tv_title_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10px"
+                    android:text="畜禽单位:"
+                    android:textColor="@color/text_black_normal"
+                    android:textSize="@dimen/text_size_small"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_title_4"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/tip_color"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/tv_unitName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="20px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_normal"
+
+                android:textSize="@dimen/text_size_small"
+                android:inputType="" android:text="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:layout_marginTop="5px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="160px"
+                android:layout_height="30px">
+
+                <TextView
+                    android:id="@+id/tv_title_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10px"
+                    android:text="处理数量:"
+                    android:textColor="@color/text_black_normal"
+                    android:textSize="@dimen/text_size_small"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_title_14"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/tip_color"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/tv_handleQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="20px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_normal"
+
+                android:textSize="@dimen/text_size_small"
+                android:inputType="" android:text="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:layout_marginTop="5px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="160px"
+                android:layout_height="30px">
+
+                <TextView
+                    android:id="@+id/tv_title_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10px"
+                    android:text="货主:"
+                    android:textColor="@color/text_black_normal"
+                    android:textSize="@dimen/text_size_small"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_title_5"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/tip_color"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/tv_supplyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_normal"
+                android:inputType="" android:text="新罗区兴武食品商行"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="5px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="160px"
+                android:layout_height="30px">
+
+                <TextView
+                    android:id="@+id/tv_title_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10px"
+                    android:text="检验编号:"
+                    android:textColor="@color/text_black_normal"
+                    android:textSize="@dimen/text_size_small"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_title_6"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/tip_color"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/tv_listno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_normal"
+                android:inputType="" android:text="139501225871"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="5px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="160px"
+                android:layout_height="30px">
+
+                <TextView
+                    android:id="@+id/tv_title_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10px"
+                    android:text="检验类型:"
+                    android:textColor="@color/text_black_normal"
+                    android:textSize="@dimen/text_size_small"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_title_8"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/tip_color"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/tv_testType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_normal"
+                android:inputType="" android:text="待宰检验"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="5px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="160px"
+                android:layout_height="30px">
+
+                <TextView
+                    android:id="@+id/tv_title_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10px"
+                    android:text="不合格原因:"
+                    android:textColor="@color/text_black_normal"
+                    android:textSize="@dimen/text_size_small"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_title_9"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/tip_color"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/tv_unqualifiedNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_normal"
+                android:inputType="" android:text="寄生虫病"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="5px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="160px"
+                android:layout_height="30px">
+
+                <TextView
+                    android:id="@+id/tv_title_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10px"
+                    android:text="原待宰圈号:"
+                    android:textColor="@color/text_black_normal"
+                    android:textSize="@dimen/text_size_small"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_title_10"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/tip_color"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/tv_circleNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_normal"
+                android:inputType="" android:text="1"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

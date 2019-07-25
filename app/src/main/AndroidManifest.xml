@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.qhsoft.killrecord">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <!--<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="${app_icon}"
+        android:label="${app_name}"
+        android:roundIcon="${app_icon}"
+        tools:replace="android:label"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".MyApp"
+        android:networkSecurityConfig="@xml/network_security_config"
+
+        >
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.qhsoft.killrecord.myprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+
+        </provider>
+        <activity
+            android:name=".module.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="app_name"
+                android:value="${app_name}" />
+
+
+        </activity>
+        <activity
+            android:name=".module.passport.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="app_name"
+                android:value="${app_name}" />
+
+        </activity>
+        <activity
+            android:name=".module.passport.NetworkSettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".module.inventory.tobekill.TobeKillListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.ledger.entryrecord.EntryRecordListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.people.PeopleAddActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.killrange.KillRangeAddActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.trace.livestock.LivestockCheckActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.ledger.entryrecord.EntryRecordAddActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.file.UploadImageActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.file.PicActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.file.UploadFileActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.ledger.tobekillcheck.TobekillCheckAddActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.ledger.killcheck.KillCheckAddActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.ledger.outrecoder.OutrecordAddActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.ledger.harmlesshandle.HarmlessHandleAddActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.trace.product.TraceProductCheckActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.inventory.productstore.ProductStoreListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.inventory.handlerproduct.HandlerProductListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.ledger.tobekillcheck.TobekillCheckListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.ledger.outrecoder.OutrecordListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.ledger.killcheck.KillCheckListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.ledger.harmlesshandle.HarmlessHandleListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.trace.livestock.LivestockListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.trace.product.TraceProductListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.supply.SupplyListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.buyer.BuyerListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.people.PeopleListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.killrange.KillRangeListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.sharebrute.ShareBruteListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.sharebrute.ShareBruteAddActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.good.GoodListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.sharegood.GoodShareListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.sharebrute.ShareBruteSelectOneListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.good.GoodAddActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".photo.PreviewActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".photo.DemoActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".photo.GalleryActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".photo.ImageSelectorActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.file.UploadImageNewActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.sharegood.GoodShareAddActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.people.PeopleSelectOneListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.killrange.KillRangeSelectOneListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.inventory.handlerproduct.HandlerProductSelectListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.inventory.productstore.ProductStoreSelectListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.inventory.tobekill.TobeKillSelectOneListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".module.baseinfo.good.GoodSelectListActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+
+
+        <meta-data
+            android:name="design_width"
+            android:value="750"></meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1334"></meta-data>
+    </application>
+
+</manifest>

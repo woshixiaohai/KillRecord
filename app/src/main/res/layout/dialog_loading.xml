@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/iv_loading"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:contentDescription="TODO" tools:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_black_deep"
+        android:textSize="32px"
+        android:layout_marginTop="20px"
+        android:text="加载中..."/>
+
+</LinearLayout>

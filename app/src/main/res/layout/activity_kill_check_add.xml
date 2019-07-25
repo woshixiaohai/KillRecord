@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/activity_bg"
+    >
+    <com.qhsoft.killrecord.view.FreeToolbar
+        android:id="@+id/mFreeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutId="@layout/toolbar_operation_common"
+        >
+
+    </com.qhsoft.killrecord.view.FreeToolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/activity_bg"
+
+        >
+        <TextView
+            android:id="@+id/tv_step_one"
+            android:layout_width="0dp"
+            android:layout_height="80px"
+            android:gravity="center"
+            android:text="送宰检验"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/theme_bg"
+            android:layout_weight="1.0"
+            android:background="@drawable/step_one"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_step_two"
+            android:layout_width="0dp"
+            android:layout_height="80px"
+            android:gravity="center"
+            android:text="宰后检验"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/text_black_normal"
+            android:layout_weight="1.0"
+
+
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/mFlowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+</LinearLayout>

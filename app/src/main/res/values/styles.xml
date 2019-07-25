@@ -1,0 +1,138 @@
+<resources>
+    //View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/toolbar_fixed_height</item>
+        <item name="android:background">@color/theme_bg</item>
+    </style>
+
+    <style name="ToolbarBackIcon">
+        <item name="android:src">@drawable/back</item>
+        <item name="android:padding">30px</item>
+        <item name="android:layout_width">@dimen/toolbar_action_image_fixed_width</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="BaseToolBarTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="ToolbarActionText">
+        <item name="android:textColor">@color/text_black_deep</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10px</item>
+    </style>
+
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+    <!-- 列表分界线　-->
+    <style name="VerticalDivider">
+        <item name="android:background">@color/divider_primary</item>
+        <item name="android:layout_height">2px</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!-- 水平分界线　-->
+    <style name="HorizontalDivider">
+        <item name="android:background">@color/divider_primary</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">2px</item>
+    </style>
+    <!--Date picker-->
+    <style name="DatePicker">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!--通用的搜索window 编辑框-->
+    <style name="LLGenericSearchWindowEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20px</item>
+        <item name="android:textSize">24px</item>
+        <!--<item name="android:background">@drawable/common_edittext</item>-->
+
+        <item name="android:textColor">@color/text_black_deep</item>
+        <item name="android:textColorHint">@color/text_black_xlight</item>
+        <item name="android:paddingLeft">10px</item>
+        <item name="android:paddingRight">10px</item>
+    </style>
+
+    <style name="CommonTabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0px</item>
+        <item name="android:background">@color/activity_bg</item>
+        <item name="tabIndicatorColor">@color/tab_indicator_color</item>
+        <item name="tabSelectedTextColor">@color/tab_selected_textcolor</item>
+        <item name="tabTextColor">@color/text_black_deep</item>
+
+    </style>
+
+    <style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/cb_bg</item>
+    </style>
+
+    <style name="MyDatePicker" parent="@android:style/Widget.Holo.DatePicker">
+        <item name="android:textColorPrimary">@color/text_black_normal</item>
+
+
+    </style>
+
+
+</resources>

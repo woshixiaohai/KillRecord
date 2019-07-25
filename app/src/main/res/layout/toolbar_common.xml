@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                style="@style/Toolbar">
+
+    <ImageView
+        android:id="@+id/toolbar_back"
+        style="@style/ToolbarBackIcon"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:contentDescription="TODO" android:padding="3px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20px"
+        />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        style="@style/BaseToolBarTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size_normal"
+        tools:text="标题"/>
+    
+</RelativeLayout>

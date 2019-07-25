@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/text_black_deep"
+        tools:text="1.送宰检验"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_info_4"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/text_black_normal"
+        tools:text="送检编号：121233333553633\n检验时间：2018-11-21 17:15\n检验员：欧阳娜娜"
+        android:layout_marginLeft="20px"
+
+        />
+    <LinearLayout
+        android:id="@+id/ll_kill_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:layout_height="2px"
+            android:background="@color/ling_bg"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            ></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/text_black_deep"
+            android:text="宰后检验"
+            android:layout_marginLeft="20px"
+
+            />
+        <TextView
+            android:id="@+id/tv_info_5"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/text_black_normal"
+            tools:text="宰后编号：121233333553633\n检验时间：2018-11-21 17:15\n检验员：欧阳娜娜"
+            android:layout_marginLeft="20px"
+
+            />
+        <com.qhsoft.killrecord.view.SimpleTable
+            android:id="@+id/mSimpleTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="20px"
+            app:cellHeight="60"
+            app:cellDeep="2"
+            app:cellLineColor="@color/text_black_normal"
+            app:cellTextColor="@color/text_black_deep"
+            app:cellTitle="合格产品#单位#数量#肉品编号"
+            app:cellTitleSize="12"
+            app:cellWidthSmall="100"
+            app:cellWidthBig="220"
+
+            >
+
+        </com.qhsoft.killrecord.view.SimpleTable>
+
+        <com.qhsoft.killrecord.view.SimpleTable
+            android:id="@+id/mSimpleTable_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="20px"
+            app:cellHeight="60"
+            app:cellDeep="2"
+            app:cellLineColor="@color/text_black_normal"
+            app:cellTextColor="@color/text_black_deep"
+            app:cellTitle="不合格产品#单位#数量#不合格原因"
+            app:cellTitleSize="12"
+            app:cellWidthSmall="100"
+            app:cellWidthBig="220"
+
+
+            >
+
+        </com.qhsoft.killrecord.view.SimpleTable>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

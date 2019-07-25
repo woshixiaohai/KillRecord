@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/mainbg"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200px"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:contentDescription="TODO" android:src="@drawable/tuzai1240"/>
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39px"
+            android:textSize="38px"
+            android:textColor="@color/text_black_deep"
+            android:text="@string/app_name"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_user_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="60px"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10px">
+
+            <EditText
+                android:id="@+id/et_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_use_name"
+                android:drawablePadding="20px"
+                android:hint="请输入用户名"
+                android:inputType="" android:maxLines="1"
+                android:padding="20px"
+                android:singleLine="true"
+                android:textSize="26px"
+                android:textColor="@color/text_black_deep"
+                android:textColorHint="@color/text_black_xlight"
+                >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/ic_close_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="TODO" android:src="@drawable/ic_close"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="2px"
+            android:background="#F1F1F1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10px">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="20px"
+                android:hint="请输入密码"
+                android:inputType="" android:maxLines="1"
+                android:padding="20px"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="26px"
+                android:textColor="@color/text_black_deep"
+                android:textColorHint="@color/text_black_xlight"
+                />
+
+            <ImageView
+                android:id="@+id/ic_close_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="TODO" android:src="@drawable/ic_close"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_remember"
+            style="@style/CustomCheckBoxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10px"
+            android:paddingLeft="10px"
+            android:text="记住密码"
+            android:textColor="@color/text_black_deep"/>
+
+        <TextView
+            android:id="@+id/tv_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="40px"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="网络设置"
+            android:textColor="@color/text_black_deep"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="fill_parent"
+        android:layout_height="80px"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true" android:gravity="center"
+        android:text="登录"
+        android:textColor="@android:color/white"
+        android:textSize="30px"
+
+        />
+
+
+</LinearLayout>

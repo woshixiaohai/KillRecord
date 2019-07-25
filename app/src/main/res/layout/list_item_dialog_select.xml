@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/activity_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="10px"
+    android:paddingLeft="20px"
+    android:paddingRight="20px"
+    android:paddingTop="10px">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20px"
+        android:layout_weight="1"
+        android:textColor="@color/text_black_normal"
+        tools:text="选项名" />
+
+    <TextView
+        android:id="@+id/selector_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选中"
+        android:textColor="@color/text_black_normal" />
+
+
+</LinearLayout>

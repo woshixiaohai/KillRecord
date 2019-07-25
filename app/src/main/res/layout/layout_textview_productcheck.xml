@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10px"
+    android:layout_marginLeft="10px"
+    android:layout_marginTop="10px"
+    android:text="待宰时间：2018-11-8\n待宰单号：123333333\n检验员：欧阳娜娜"
+    android:textColor="@color/text_black_normal"
+    android:textSize="@dimen/text_size_normal"
+    android:paddingLeft="10px"
+    />

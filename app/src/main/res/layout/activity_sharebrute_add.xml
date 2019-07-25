@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <com.qhsoft.killrecord.view.FreeToolbar
+        android:id="@+id/mFreeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutId="@layout/toolbar_operation_common"
+        >
+
+    </com.qhsoft.killrecord.view.FreeToolbar>
+    <android.support.v4.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20px"
+                >
+                <RelativeLayout
+                    android:layout_width="200px"
+                    android:layout_height="80px">
+
+                    <TextView
+                        android:id="@+id/tv_title_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80px"
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="畜禽编号"
+                        android:paddingRight="10px"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80px"
+                        android:text="*"
+                        android:layout_toLeftOf="@id/tv_title_1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/tip_color"
+                        android:gravity="center_vertical"
+
+                        />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_billno"
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+                    android:background="@drawable/et_bg"
+                    android:padding="10px"
+                    android:textColor="@color/text_black_normal"
+                    android:layout_marginRight="20px"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center_vertical"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20px"
+                >
+                <RelativeLayout
+                    android:layout_width="200px"
+                    android:layout_height="80px">
+
+                    <TextView
+                        android:id="@+id/tv_title_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80px"
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="畜禽名称"
+                        android:paddingRight="10px"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80px"
+                        android:text="*"
+                        android:layout_toLeftOf="@id/tv_title_2"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/tip_color"
+                        android:gravity="center_vertical"
+
+                        />
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/tv_bruteName"
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+                    android:background="@drawable/et_bg"
+                    android:inputType="" android:padding="10px"
+                    android:textColor="@color/text_black_normal"
+                    android:layout_marginRight="20px"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_size_small"
+                    android:hint=""
+                    android:textColorHint="@color/text_black_xlight"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20px"
+                >
+                <RelativeLayout
+                    android:layout_width="200px"
+                    android:layout_height="80px">
+
+                    <TextView
+                        android:id="@+id/tv_title_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80px"
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="畜禽种类"
+                        android:paddingRight="10px"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80px"
+                        android:text="*"
+                        android:layout_toLeftOf="@id/tv_title_3"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/tip_color"
+                        android:gravity="center_vertical"
+
+                        />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_bruteType"
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+                    android:background="@drawable/et_bg"
+                    android:padding="10px"
+                    android:textColor="@color/text_black_normal"
+                    android:layout_marginRight="20px"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center_vertical"
+
+                    android:textColorHint="@color/text_black_xlight"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20px"
+                >
+                <RelativeLayout
+                    android:layout_width="200px"
+                    android:layout_height="80px">
+
+                    <TextView
+                        android:id="@+id/tv_title_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80px"
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="计量单位"
+                        android:paddingRight="10px"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80px"
+                        android:text="*"
+                        android:layout_toLeftOf="@id/tv_title_4"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/tip_color"
+                        android:gravity="center_vertical"
+
+
+                        />
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/tv_unitName"
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+                    android:background="@drawable/et_bg"
+                    android:inputType="" android:padding="10px"
+                    android:textColor="@color/text_black_normal"
+                    android:layout_marginRight="20px"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_size_small"
+
+                    android:textColorHint="@color/text_black_xlight"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>

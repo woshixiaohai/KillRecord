@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FreeToolBar">
+        <attr name="layoutId" format="reference"/>
+        <attr name="isShowBack" format="boolean"/>
+        <attr name="freeTitle" format="reference|string"/>
+        <attr name="titleColor" format="reference|color"/>
+        <attr name="backDrawable" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="SimpleTable">
+        <attr name="cellHeight" format="integer"/>
+        <attr name="cellDeep" format="integer"/>
+        <attr name="cellTitle" format="string"></attr>
+        <attr name="cellTitleSize" format="integer"></attr>
+        <attr name="cellWidthBig" format="integer"></attr>
+        <attr name="cellWidthSmall" format="integer"></attr>
+        <attr name="cellLineColor" format="color"></attr>
+        <attr name="cellTextColor" format="color"></attr>
+
+    </declare-styleable>
+
+
+</resources>

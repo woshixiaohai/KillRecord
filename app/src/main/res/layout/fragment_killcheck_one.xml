@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/ll_bg"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="单据编号"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_1"
+                            android:gravity="center_vertical"
+                            android:text="*"
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/tv_billno"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:inputType="" android:padding="10px"
+
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="送检日期"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_2"
+                            android:gravity="center_vertical"
+                            android:text="*"
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_checkDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:gravity="center_vertical"
+                        android:padding="10px"
+
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="检验员"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_3"
+                            android:gravity="center_vertical"
+                            android:text="*"
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_checkName"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:padding="10px"
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small"
+                        android:gravity="center_vertical"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="检验结论"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_4"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/tv_verdict"
+                        android:layout_width="match_parent"
+                        android:layout_height="240px"
+
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:gravity="left|top"
+                        android:inputType="" android:padding="10px"
+
+                        android:textColor="@color/text_black_normal"
+
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/ll_bg"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="进场编号"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_5"
+                            android:gravity="center_vertical"
+                            android:text="*"
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_jcBillno"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:padding="10px"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="畜禽名称"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_6"
+                            android:gravity="center_vertical"
+                            android:text="*"
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_bruteName"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:padding="10px"
+                        android:textColor="@color/text_black_normal"
+
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="畜禽种类"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_7"
+                            android:gravity="center_vertical"
+                            android:text="*"
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_bruteType"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:padding="10px"
+                        android:textColor="@color/text_black_normal"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="待宰圈号"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_8"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_circleNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:padding="10px"
+                        android:textColor="@color/text_black_normal"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/ll_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="准宰数量"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_9"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/tv_aimQty"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:padding="10px"
+                        android:inputType="number"
+
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/ll_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="急宰数量"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_10"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/tv_worryQty"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:padding="10px"
+                        android:inputType="number"
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="急宰原因"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_11"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/tv_worryNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:inputType="" android:padding="10px"
+
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/ll_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="缓宰数量"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_12"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/tv_slowQty"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:padding="10px"
+                        android:inputType="number"
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="缓宰原因"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_13"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/tv_slowNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:inputType="" android:padding="10px"
+
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="转移圈号"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_14"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/tv_shiftNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:inputType="" android:padding="10px"
+
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="转移数量"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_15"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/tv_shiftQty"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:padding="10px"
+                        android:inputType="number"
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/ll_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="禁宰数量"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_16"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/tv_bearQty"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:padding="10px"
+                        android:inputType="number"
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="200px"
+                        android:layout_height="80px">
+
+                        <TextView
+                            android:id="@+id/tv_title_17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10px"
+                            android:text="缓宰原因"
+                            android:textColor="@color/text_black_normal"
+                            android:textSize="@dimen/text_size_small"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_title_17"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/tip_color"
+
+                            />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/tv_bearNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/et_bg"
+                        android:inputType="" android:padding="10px"
+                        android:textColor="@color/text_black_normal"
+                        android:textSize="@dimen/text_size_small"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

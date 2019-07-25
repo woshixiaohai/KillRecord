@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20px"
+        >
+
+        <TextView
+            android:id="@+id/tv_title_1"
+            android:layout_width="200px"
+            android:layout_height="80px"
+            android:gravity="right"
+            android:paddingLeft="20px"
+
+            android:textColor="@color/text_black_normal"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/tv_value_1"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@drawable/et_bg"
+            android:inputType="" android:padding="10px"
+            android:textColor="@color/text_black_normal"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="10px"
+
+            android:textSize="@dimen/text_size_small"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20px"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_title_2"
+            android:layout_width="200px"
+            android:layout_height="80px"
+            android:gravity="right"
+            android:paddingLeft="20px"
+
+            android:textColor="@color/text_black_normal"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/tv_value_2"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@drawable/et_bg"
+            android:inputType="" android:padding="10px"
+            android:textColor="@color/text_black_normal"
+            android:textSize="@dimen/text_size_small"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="10px"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

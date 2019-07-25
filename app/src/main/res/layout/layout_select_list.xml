@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    >
+    <CheckBox
+        android:id="@+id/cb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/cb_bg"
+        android:layout_marginLeft="10px"
+        android:layout_centerVertical="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20px"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/cb_check"
+        >
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black_normal"
+            android:textSize="@dimen/text_size_normal"
+
+            />
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black_normal"
+            android:textSize="@dimen/text_size_normal"
+
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="TODO" android:src="@drawable/jinru"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20px"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

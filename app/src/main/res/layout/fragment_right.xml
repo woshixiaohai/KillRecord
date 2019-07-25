@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/activity_bg"
+    android:orientation="vertical"
+    >
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.luyinbros.combineview.SimpleListView
+            android:id="@+id/mSimpleListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.luyinbros.combineview.SimpleListView>
+    </android.support.v4.widget.NestedScrollView>
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content" android:contentDescription="TODO" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="20px"
+        />
+
+
+</RelativeLayout>

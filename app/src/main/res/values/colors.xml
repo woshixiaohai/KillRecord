@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#056dcd</color>
+
+
+    <color name="text_black_xlight">#999999</color>
+    <color name="text_black_light">#888888</color>
+    <color name="text_black_normal">#666666</color>
+    <color name="text_black_deep">#333333</color>
+    <color name="theme_bg">#2595d0</color>
+    <color name="activity_bg">#eaeced</color>
+    <color name="ling_bg">#cccccc</color>
+    <color name="loading">#52C9FF</color>
+    <color name="divider_primary">#E4E4E4</color>
+    <color name="text_select">#1AA2DB</color>
+    <color name="common_divider">#989898</color>
+    <color name="white">#ffffff</color>
+    <color name="date_bg">#eaeced</color>
+
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="statusbar">#333333</color>
+    <color name="tab_bg">#cccccc</color>
+    <color name="tab_indicator_color">#ff0000</color>
+    <color name="tab_selected_textcolor">#ff0000</color>
+    <color name="tip_color">#cc0000</color>
+    <color name="step_active_bg">#a2ddfc</color>
+    <!--图片库-->
+    <color name="mineblue">#00A0E6</color>
+    <color name="transparent">#FFFFFFFF</color>
+    <color name="yancy_green500">#259b24</color>
+    <color name="yancy_green700">#0a7e07</color>
+
+
+
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg"
+    >
+    <com.qhsoft.killrecord.view.FreeToolbar
+        android:id="@+id/mFreeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.qhsoft.killrecord.view.FreeToolbar>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            style="@style/VerticalDivider" />
+
+        <LinearLayout
+            android:id="@+id/fileadd_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="20px"
+            android:paddingRight="20px"
+            android:paddingTop="20px" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingRight="20px"
+                android:text="文件名"
+                android:textColor="@color/text_black_normal"
+                />
+
+            <TextView
+                android:id="@+id/file_add_name"
+                android:layout_width="0dp"
+                android:layout_height="80px"
+                android:layout_weight="3"
+                style="@style/LLGenericSearchWindowEditText"
+                android:background="@drawable/et_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10px"
+                 />
+        </LinearLayout>
+
+        <View
+            style="@style/VerticalDivider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="20px"
+            android:paddingRight="20px"
+            android:paddingTop="20px" >
+
+            <TextView
+                android:id="@+id/file_browse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60px"
+                android:background="@drawable/btn_theme_bg"
+                android:paddingBottom="20px"
+                android:paddingLeft="40px"
+                android:paddingRight="40px"
+                android:paddingTop="20px"
+                android:text="选择"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/file_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_theme_bg"
+                android:paddingBottom="20px"
+                android:paddingLeft="40px"
+                android:paddingRight="40px"
+                android:paddingTop="20px"
+                android:text="上传"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:textSize="14sp"
+        android:textColor="@color/text_black_normal"
+        />
+
+</LinearLayout>

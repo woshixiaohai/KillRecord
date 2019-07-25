@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/activity_bg"
+    android:gravity="center_horizontal"
+    >
+    <com.qhsoft.killrecord.view.FreeToolbar
+        android:id="@+id/mFreeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutId="@layout/toolbar_operation_common"
+
+        >
+
+    </com.qhsoft.killrecord.view.FreeToolbar>
+    <RadioGroup
+        android:layout_width="600px"
+        android:layout_height="80px"
+        android:orientation="horizontal"
+        android:layout_marginTop="20px"
+        android:checkedButton="@+id/add_rb_bill"
+        >
+
+        <RadioButton
+            android:id="@+id/add_rb_bill"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/radionbutton_left_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="16px"
+            android:paddingTop="16px"
+            android:text="单据"
+            android:textColor="@drawable/rb_textcolor_bg" />
+
+        <RadioButton
+            android:id="@+id/add_rb_line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/radionbutton_right_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="16px"
+            android:paddingTop="16px"
+            android:text="单据详情"
+            android:textColor="@drawable/rb_textcolor_bg" />
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/mContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
+
+
+
+</LinearLayout>
+
+
+
+

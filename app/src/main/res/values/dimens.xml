@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_large">38px</dimen>
+    <dimen name="text_size_normal">32px</dimen>
+    <dimen name="text_size_small">28px</dimen>
+    <dimen name="text_size_xsmall">24px</dimen>
+    <dimen name="toolbar_fixed_height">100px</dimen>
+    <dimen name="toolbar_action_image_fixed_width">80px</dimen>
+    <dimen name="dialog_toolbar_fixed_height">80px</dimen>
+    <dimen name="divider_thin_height">2px</dimen>
+    <dimen name="divider_space_height">10px</dimen>
+    <dimen name="divider_spacing_common">@dimen/spacing_primary</dimen>
+    <dimen name="spacing_primary">20px</dimen>
+    <dimen name="image_size">120dp</dimen>
+    <dimen name="space_size">2dp</dimen>
+
+</resources>
